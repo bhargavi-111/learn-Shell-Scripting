@@ -1,0 +1,31 @@
+What is shell scripting ?
+you perform these tasks:
+1. Check whether the server is running.
+2. Check available disk space.
+3. Check memory usage.
+4. Check CPU usage.
+5. Check application status.
+6. Check system logs.
+Doing these tasks manually every day is boring and time-consuming.
+
+Wouldn't it be better if Linux performed all these tasks automatically?
+
+That's exactly what Shell Scripting does!
+
+Shell scripting means writing multiple Linux commands inside a file so that Linux can execute them automatically, one after another.
+
+What is shell?
+A Shell is a program that acts as a communication bridge between you and the Linux operating system.
+
+What is Bash?
+Bash stands for Bourne Again Shell.
+
+It is one of the most widely used shells in Linux environments.
+
+Why do DevOps engineers learn Bash?
+- Automate repetitive tasks.
+- Manage Linux servers.
+- Monitor applications.
+- Automate deployments.
+- Manage backups.
+- Integrate scripts into CI/CD pipelines.
