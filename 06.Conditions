@@ -1,0 +1,63 @@
+What is Conditional statement?
+A conditional statement allows a script to make decisions based on whether a condition is true or false.
+
+if [ condition ]
+then
+    # Commands if condition is true
+else
+    # Commands if condition is false
+fi
+
+if	Checks a condition
+then	Executes commands if true
+else	Executes commands if false
+fi	Ends the if statement
+
+For example:
+#!/bin/bash
+
+age=20
+
+if [ $age -ge 18 ]
+then
+    echo "You are eligible to vote."
+else
+    echo "You are not eligible to vote."
+fi
+
+Numeric comparison operators:
+-eq	Equal to	[ $a -eq $b ]
+-ne	Not equal to	[ $a -ne $b ]
+-gt	Greater than	[ $a -gt $b ]
+-lt	Less than	[ $a -lt $b ]
+-ge	Greater or equal[ $a -ge $b ]
+-le	Less or equal	[ $a -le $b ]
+
+String comparison operators:
+=	Strings are equal
+!=	Strings are different
+-z	String is empty
+-n	String is not empty
+
+elif:
+if have more than two possibilies then using "elif"
+For example:
+#!/bin/bash
+
+read -p "Enter environment: " environment
+
+if [ "$environment" = "dev" ]
+then
+    echo "Development server selected."
+
+elif [ "$environment" = "test" ]
+then
+    echo "Testing server selected."
+
+elif [ "$environment" = "prod" ]
+then
+    echo "Production server selected."
+
+else
+    echo "Invalid environment."
+fi
