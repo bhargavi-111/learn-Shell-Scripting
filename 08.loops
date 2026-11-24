@@ -33,3 +33,66 @@ Processes a sequence of values	Runs while a condition is true
 Remember this simple rule:
 - Know what you want to iterate over? Use for.
 - Want to continue until something changes? Consider while.
+
+Break and Continue:
+break: Immediately exits the loop.
+Example:
+1. for loop
+2. while loop
+FOR example:
+#!/bin/bash
+
+for i in {1..10}
+do
+    echo "Number: $i"
+done
+
+while:It repeats commands as long as a condition remains true.
+For example:
+#!/bin/bash
+
+count=1
+
+while [ "$count" -le 5 ]
+do
+    echo "Count: $count"
+
+    count=$((count + 1))
+done
+
+Difference between for and while
+For loop        While loop
+Useful for iterating over a known list  Useful when repetition depends on a condition
+Commonly used for files and servers     Commonly used for repeated checks
+Processes a sequence of values  Runs while a condition is true
+
+Remember this simple rule:
+- Know what you want to iterate over? Use for.
+- Want to continue until something changes? Consider while.
+
+Break and Continue:
+break: Immediately exits the loop.
+Example:
+for i in {1..10}
+do
+    if [ "$i" -eq 5 ]
+    then
+        break
+    fi
+
+    echo "$i"
+done
+
+continue: Skips the current iteration and moves to the next one.
+Example:
+#!/bin/bash
+
+for i in {1..5}
+do
+    if [ "$i" -eq 3 ]
+    then
+        continue
+    fi
+
+    echo "$i"
+done
