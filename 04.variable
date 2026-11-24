@@ -1,0 +1,23 @@
+What is variable?
+A variable is a container used to store information that we can use later in a program.
+For example:
+name="Shell-script"
+echo $name
+
+Important Bash variable rules:
+1.No spaces around =
+2.Use $ to access a variable
+3.Variable names are case-sensitive
+4.Accept user input using read
+
+For example:
+
+#!/bin/bash
+
+echo "Welcome to DevOps Training!"
+
+echo "Enter your name:"
+read username
+
+echo "Hello $username!"
+echo "Welcome to your Linux journey."
